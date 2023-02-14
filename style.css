@@ -45,6 +45,7 @@ label{
      cursor: pointer;     
      outline: none;
 }
+
 .form-radio:checked::before
 {
      position: absolute;
@@ -54,19 +55,20 @@ label{
      content: '\02143';
      transform: rotate(40deg);
 }
+
 .form-radio:hover
 {
      background-color: #f7f7f7;
 }
-.form-radio:checked
-{
+
+.form-radio:checked {
      background-color: #f1f1f1;
 }
 
-.result{
+.result {
     font-family: 'Raleway', sans-serif;
-    display: grid;
-    grid-template-columns: 350px 90px 280px;
+    /* display: grid; */
+    grid-template-columns: 350px 200px;
     grid-template-areas: 
     "i la a"
     "i lpr p"
@@ -110,7 +112,7 @@ button:active{background-color: #443729;}
     border-radius: 5px;
 }
 
-.result>.label{
+.label{
     font-weight: bold;
 }
 
@@ -130,8 +132,6 @@ button:active{background-color: #443729;}
     grid-area: lpark;
 }
 
-.result>.l-immediate{}
-
 .result>.address{
     grid-area: a;
 }
@@ -148,8 +148,6 @@ button:active{background-color: #443729;}
     grid-area: park;
 }
 
-.result>.immediate{}
-
 .no-match{
     color: #DD6300;
     display: inline-block;
@@ -158,4 +156,8 @@ button:active{background-color: #443729;}
     padding: 10px;
     border-radius: 5px;
     font-family: 'Raleway', sans-serif;
+}
+
+.l-park {
+    margin-top: 10px;
 }
